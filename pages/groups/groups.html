@@ -16,6 +16,14 @@ groups.html
 		<!-- title -->
 		<title>MSG | Private Events & Venue Booking</title>
 
+		<!-- fonts Bodoni Moda & PT Serif -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+
 		<!-- Bootstrap5 CSS -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -30,11 +38,100 @@ groups.html
 	</head>
 	<body>
 		<!-- *****HEADER***** -->
-		<header>header</header>
+		<header class="containe d-flex align-items-end justify-content-evenly">
+			<div class="navbar gap-5 dropdown">
+				<div class="d-flex flex-column align-items-center gap-3">
+					<img
+						class="custom-header-logo-img"
+						src="../../assets/favicon/pint.svg"
+						alt="Mayor Square Guinness logo"
+					/>
+					<p class="navbar-brand">Mayor Square Guinness</p>
+				</div>
+
+				<!-- navbar mobile dropdown | TODO: styling -->
+				<div class="dropdown custom-dropdown d-lg-none">
+					<button
+						class="btn"
+						type="button"
+						data-bs-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false"
+					>
+						<img
+							src="../../assets/icons/three-lines.svg"
+							alt="three horizontal lines icon"
+						/>
+					</button>
+					<div
+						class="dropdown-menu custom-dropdown-menu"
+						aria-labelledby="dropdownMenuButton"
+					>
+						<a class="dropdown-item" href="../../index.html">Homepage</a>
+						<a class="dropdown-item" href="../vourchers/vouchers.html"
+							>Vouchers</a
+						>
+						<a class="dropdown-item" href="../reservation/reservation.html"
+							>Reservation</a
+						>
+						<a class="dropdown-item" href="../menus/menus.html"> Menus</a>
+						<a class="dropdown-item" href="../contact/contact.html">Contact</a>
+						<a class="dropdown-item" href="../careers/careers.html">Careers</a>
+					</div>
+				</div>
+
+				<!-- navbar desktop -->
+				<ul
+					class="nav flex-column flex-lg-row align-items-center justify-lg-content-evenly mt-lg-5 custom-nav d-none d-lg-flex"
+					aria-labelledby="dropdownMenuButton"
+				>
+					<li class="nav-item">
+						<a href="../../index.html" class="nav-link custom-nav-link"
+							>Homepage</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							href="../vourchers/vouchers.html"
+							class="nav-link custom-nav-link"
+							>Vouchers</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							href="../reservation/reservation.html"
+							class="nav-link custom-nav-link"
+							>Reservation</a
+						>
+					</li>
+					<li class="nav-item">
+						<a href="../menus/menus.html" class="nav-link custom-nav-link"
+							>Menus</a
+						>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link custom-nav-link disabled">Groups</a>
+					</li>
+					<li class="nav-item">
+						<a href="../contact/contact.html" class="nav-link custom-nav-link"
+							>Contact</a
+						>
+					</li>
+					<li class="nav-item">
+						<a href="../careers/careers.html" class="nav-link custom-nav-link">
+							Careers</a
+						>
+					</li>
+				</ul>
+			</div>
+		</header>
 		<!-- *****CLOSING HEADER***** -->
 
 		<!-- ******MAIN CONTENT***** -->
-		<p>Groups page main content</p>
+		<div class="container my-5">
+			<!-- YOUR CODE GOES HERE WITHIN THIS CONTAINER -->
+			<p>Groups</p>
+		</div>
 		<!-- ******CLOSING CONTENT***** -->
 
 		<!-- *****FOOTER***** -->
