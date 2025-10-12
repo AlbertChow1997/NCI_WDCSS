@@ -22,7 +22,12 @@ The final project of Web Design and Client Side Scripting
 
 ## Style
 ### 1. CSS Using Warm Colours
-#### Colours: + #65A653 + #87D962 + #A6D98F + #F2D8A7 + #F27405
+#### Colours: 
++ #65A653 
++ #87D962 
++ #A6D98F 
++ #F2D8A7 
++ #F27405
 #### Font-family: 
 + PT Serif -- Big Title
 + Bodoni Moda -- Body
