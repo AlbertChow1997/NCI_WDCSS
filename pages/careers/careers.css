@@ -1,28 +1,26 @@
-body { 
+body {
   font-family: 'Bodoni Moda', serif;
 }
+
 .careers-nav {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 5px;
   font-size: 20px;
   background-color: #65A653;
   padding: 30px;
 }
+
 .careers-nav a {
-	margin: 0 10px;
+  margin: 0 10px;
   text-decoration: none;
   color: #F2D8A7;
 }
+
 #reservation {
   margin-left: 60px;
   background-color: #3dc722;
   padding: 10px 20px;
   border-radius: 5px;
-}
-#footer { 
-  margin-top: 30px;
-  background-color: #65A653;
-  padding: 30px;
 }
