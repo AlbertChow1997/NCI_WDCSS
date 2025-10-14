@@ -9,39 +9,39 @@ body {
 
 /* header */
 header {
-  min-height: 20vh;
+  min-height: 10vh;
   border-bottom: 1px solid #F27405;
 
   .custom-header-logo-img {
     width: 45px;
     height: 45px;
   }
-
 }
 
-.custom-dropdown {
-  img {
-    width: 35px;
-    height: 35px;
-  }
+/* header > accordion */
+.custom-accordion-btn {
+  background: none;
+  border: none;
+}
 
-  button:focus,
-  button:active {
+.custom-accordion-btn-img {
+  width: 25px;
+  height: 25px;
+  background: none;
+
+  &:focus {
+    border: none;
     outline: none;
     box-shadow: none;
   }
 }
 
-.custom-dropdown-menu {
-  border: 1px solid red;
-}
-
+/* header > nav */
 .custom-nav-link {
   color: #F27405;
 
   &:hover {
     color: #65A653;
-
   }
 }
 
