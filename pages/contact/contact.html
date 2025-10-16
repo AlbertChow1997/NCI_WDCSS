@@ -35,6 +35,8 @@ contact.html
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="../../css/global.css" />
 		<link rel="stylesheet" href="contact.css" />
+
+
 	</head>
 	<body>
 		<!-- *****HEADER***** -->
@@ -128,12 +130,26 @@ contact.html
 		<!-- *****CLOSING HEADER***** -->
 
 		<!-- ******MAIN CONTENT***** -->
-		<div class="container my-5">
-			<!-- YOUR CODE GOES HERE WITHIN THIS CONTAINER -->
-			<p>Contact</p>
-			<p>Test111111</p>
-			<p>Test111112</p>
-		</div>
+
+			<div class="hero-banner">
+				<div class="hero-banner-text">Contact us</div>
+			</div>
+
+
+			<div class="container-fluid" id="contact-section">
+			</div>
+			<script src="contact.js">
+			</script>
+			<script>
+				document.addEventListener('DOMContentLoaded',function(){
+				document.getElementById('contact-section').innerHTML=Contact.createContactSection();
+			}
+			);
+			</script>
+			
+
+
+	
 		<!-- ******CLOSING CONTENT***** -->
 
 		<!-- *****FOOTER***** -->
