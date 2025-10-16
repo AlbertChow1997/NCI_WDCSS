@@ -11,7 +11,11 @@ reervation.html
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- favicon -->
-		<link rel="icon" type="image/x-icon" href="../../assets/favicon/pint.svg" />
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="../../assets/images/msg_logo.png"
+		/>
 
 		<!-- title -->
 		<title>MSG | Reservation</title>
@@ -38,102 +42,235 @@ reervation.html
 	</head>
 	<body>
 		<!-- *****HEADER***** -->
-		<header class="containe d-flex align-items-end justify-content-evenly">
-			<div class="navbar gap-5 dropdown">
-				<div class="d-flex flex-column align-items-center gap-3">
+		<header>
+			<div class="navbar mx-5 py-3 pt-4">
+				<div class="d-flex align-items-center flex-lg-column gap-3 gap-lg-1">
 					<img
 						class="custom-header-logo-img"
-						src="../../assets/favicon/pint.svg"
+						src="../../assets/images/msg_logo.png"
 						alt="Mayor Square Guinness logo"
 					/>
-					<p class="navbar-brand">Mayor Square Guinness</p>
+					<p class="navbar-brand m-0 d-none d-sm-block">
+						Mayor Square Guinness
+					</p>
+					<p class="navbar-brand m-0 d-sm-none">MSG</p>
 				</div>
 
-				<!-- navbar mobile dropdown | TODO: styling -->
-				<div class="dropdown custom-dropdown d-lg-none">
-					<button
-						class="btn"
-						type="button"
-						data-bs-toggle="dropdown"
-						aria-haspopup="true"
-						aria-expanded="false"
-					>
-						<img
-							src="../../assets/icons/three-lines.svg"
-							alt="three horizontal lines icon"
-						/>
-					</button>
-					<div
-						class="dropdown-menu custom-dropdown-menu"
-						aria-labelledby="dropdownMenuButton"
-					>
-						<a class="dropdown-item" href="../../index.html">Homepage</a>
-						<a class="dropdown-item" href="../vourchers/vouchers.html"
-							>Vouchers</a
-						>
-						<a class="dropdown-item" href="../menus/menus.html">Menus</a>
-						<a class="dropdown-item" href="../groups/groups.html"> Groups</a>
-						<a class="dropdown-item" href="../contact/contact.html">Contact</a>
-						<a class="dropdown-item" href="../careers/careers.html">Careers</a>
-					</div>
-				</div>
+				<!-- navbar mobile accordion -->
+				<button
+					class="d-lg-none custom-accordion-btn"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#collapseOne"
+					aria-expanded="true"
+					aria-controls="collapseOne"
+				>
+					<img
+						class="custom-accordion-btn-img"
+						src="../../assets/icons/three-lines.svg"
+						alt="toggle accordion icon"
+					/>
+				</button>
 
 				<!-- navbar desktop -->
 				<ul
 					class="nav flex-column flex-lg-row align-items-center justify-lg-content-evenly mt-lg-5 custom-nav d-none d-lg-flex"
-					aria-labelledby="dropdownMenuButton"
 				>
 					<li class="nav-item">
-						<a href="../../index.html" class="nav-link custom-nav-link"
-							>Homepage</a
-						>
+						<a href="../../index.html" class="nav-link custom-nav-link">
+							Homepage
+						</a>
 					</li>
 					<li class="nav-item">
 						<a
 							href="../vourchers/vouchers.html"
 							class="nav-link custom-nav-link"
-							>Vouchers</a
 						>
+							Vouchers
+						</a>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link custom-nav-link disabled"
-							>Reservation</a
-						>
+						<a href="#" class="nav-link custom-nav-link disabled">
+							Reservation
+						</a>
 					</li>
 					<li class="nav-item">
-						<a href="../menus/menus.html" class="nav-link custom-nav-link"
-							>Menus</a
-						>
+						<a href="../menus/menus.html" class="nav-link custom-nav-link">
+							Menus
+						</a>
 					</li>
 					<li class="nav-item">
-						<a href="../groups/groups.html" class="nav-link custom-nav-link"
-							>Groups</a
-						>
+						<a href="../groups/groups.html" class="nav-link custom-nav-link">
+							Groups
+						</a>
 					</li>
 					<li class="nav-item">
-						<a href="../contact/contact.html" class="nav-link custom-nav-link"
-							>Contact</a
-						>
+						<a href="../contact/contact.html" class="nav-link custom-nav-link">
+							Contact
+						</a>
 					</li>
 					<li class="nav-item">
 						<a href="../careers/careers.html" class="nav-link custom-nav-link">
-							Careers</a
-						>
+							Careers
+						</a>
 					</li>
 				</ul>
+			</div>
+			<!-- accordion mobile -->
+			<div class="accordion d-lg-none" id="accordionExample">
+				<div class="accordion-item border-0 custom-accordion-item">
+					<div
+						id="collapseOne"
+						class="accordion-collapse collapse"
+						data-bs-parent="#accordionExample"
+					>
+						<div class="accordion-body m-0 p-0">
+							<ul class="nav flex-column align-items-center mb-1">
+								<li class="nav-item">
+									<a href="../../index.html" class="nav-link custom-nav-link">
+										Homepage
+									</a>
+								</li>
+								<li class="nav-item">
+									<a
+										href="../vourchers/vouchers.html"
+										class="nav-link custom-nav-link"
+									>
+										Vouchers
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link custom-nav-link disabled">
+										Reservation
+									</a>
+								</li>
+								<li class="nav-item">
+									<a
+										href="../menus/menus.html"
+										class="nav-link custom-nav-link"
+									>
+										Menus
+									</a>
+								</li>
+								<li class="nav-item">
+									<a
+										href="../groups/groups.html"
+										class="nav-link custom-nav-link"
+									>
+										Groups
+									</a>
+								</li>
+								<li class="nav-item">
+									<a
+										href="../contact/contact.html"
+										class="nav-link custom-nav-link"
+									>
+										Contact
+									</a>
+								</li>
+								<li class="nav-item">
+									<a
+										href="../careers/careers.html"
+										class="nav-link custom-nav-link"
+									>
+										Careers
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</header>
 		<!-- *****CLOSING HEADER***** -->
 
 		<!-- ******MAIN CONTENT***** -->
-		<div class="container my-5">
+		<div class="container my-4 custom-main-container">
 			<!-- YOUR CODE GOES HERE WITHIN THIS CONTAINER -->
 			<p>Reservation</p>
 		</div>
 		<!-- ******CLOSING CONTENT***** -->
 
 		<!-- *****FOOTER***** -->
-		<footer>footer</footer>
+		<footer class="footer custom-footer mt-5">
+			<div
+				class="row row-cols-1 row-cols-sm-2 row-cols-md-5 px-5 m-5 mb-0 custom-footer-container"
+			>
+				<div class="col mb-3 d-flex flex-column gap-2">
+					<img
+						class="custom-footer-logo-img"
+						src="../../assets/images/msg_logo.png"
+						alt="Mayor Square Guinness logo"
+					/>
+					<p class="m-0">© 2025</p>
+				</div>
+				<div class="col mb-3">
+					<h5>Company</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#">Our Story</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#">Join Our Team</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#">Reservations</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col mb-3">
+					<h5>Explore</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#">Menu</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#">Special & Events</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#">Gallery</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#">Online Ordering</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col mb-3">
+					<h5>Policies</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#"> Terms and conditions</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#"> Accessibility</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#"> Privacy Policy</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#"> Cookie Policy</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col mb-3">
+					<h5>Help</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#"> Support</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#"> Modify Reservation </a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#"> Hours & Location</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#"> Private Dining & Catering </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 		<!-- *****CLOSING FOOTER***** -->
 
 		<!-- ***DO NOT ADD OR CHANGE CODE BELOW THIS LINE*** -->
@@ -150,5 +287,7 @@ reervation.html
 			integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
 			crossorigin="anonymous"
 		></script>
+		<!-- Script JS -->
+		<script src="../../js/global-script.js"></script>
 	</body>
 </html>
