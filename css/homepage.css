@@ -1,3 +1,7 @@
+body {
+    background-color: rgba(255, 243, 233, 1);
+}
+
 /* banner */
 .custom-img-banner {
     background-image: url("../assets/images/homepage/homepage-msg-building.png");
@@ -41,7 +45,7 @@
 
 /* section cards */
 .custom-card-abt {
-    background-color: rgb(254, 253, 245);
+    background-color: white;
     border: none;
     border-left: 8px solid #f27405;
     border-radius: 5px;
