@@ -1,0 +1,75 @@
+/* banner */
+.custom-img-banner {
+    background-image: url("../assets/images/homepage/homepage-msg-building.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    min-height: 60vh;
+}
+
+.custom-btn {
+    background-color: #732514;
+
+    a {
+        color: #ffffff;
+    }
+
+    &:hover {
+        background-color: #a63c24;
+
+        a {
+            color: #ffffff;
+        }
+    }
+}
+
+/* main content  */
+.custom-homepage-container {
+    margin: 50px 0;
+}
+
+.custom-bg-img-card {
+    background-image: url("../assets/images/homepage/homepage-card-bg-img1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    min-height: 60vh;
+    border-radius: 5px;
+}
+
+/* section cards */
+.custom-card-abt {
+    background-color: rgb(254, 253, 245);
+    border: none;
+    border-left: 8px solid #f27405;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 50vh;
+
+    h2,
+    h5,
+    h6 {
+        color: #a63c24;
+        margin-top: 10px;
+    }
+}
+
+.custom-card-img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media (max-width: 991px) {
+    .custom-img-banner {
+        min-height: 50vh;
+
+        img {
+            width: 100%;
+            height: 150px;
+        }
+    }
+}
