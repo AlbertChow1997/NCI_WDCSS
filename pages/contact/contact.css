@@ -1,0 +1,51 @@
+.hero-banner{
+    background-image: url("../../img/contact_us_page/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height:500px;
+    width: 100%;
+
+    color:white;
+    position:relative;
+}
+
+.hero-banner-text{
+    position:absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 100px;
+}
+
+.contact-card{
+    margin-bottom: 20px;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.contact-card-head{
+    margin-bottom: 20px;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-info{
+    margin-bottom: 20px;  
+    color:black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.row {
+  background-color: #FAF2E8;
+}
+
+.map-iframe {
+    width: 100%;    
+    height: 600px; 
+    border: 0;
+}
+
+
