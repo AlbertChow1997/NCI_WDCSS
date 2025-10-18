@@ -102,7 +102,6 @@ body {
         button {
             position: absolute;
             right: 5%;
-            /* margin: 20px; */
         }
 
         p {
@@ -139,9 +138,7 @@ body {
 
     .cca-left {
         p {
-          
             right: 0;
-            border: 1px solid blue;
         }
     }
 }
