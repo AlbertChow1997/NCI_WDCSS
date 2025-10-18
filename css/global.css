@@ -1,81 +1,93 @@
 /* CUSTOM CSS FOR HEADER, FOOTER AND OTHER SHARED COMPONENTS */
-body {
-  font-family: "Bodoni Moda", serif;
-  font-weight: 400;
-  font-style: normal;
+:root {
+    --color-white: #ffffff;
+    --color-text-primary: #222222;
+    --color-text-secondary: #a63c24;
+    --color-text-hover: #4f8a3c;
+    --color-bg-primary: #ffead8;
+    --color-bg-secondary: #fdf1e9ff;
+    --color-btn: #732514;
+}
 
-  color: #F27405;
+body {
+    font-family: "Bodoni Moda", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    color: var(--color-text-primary);
 }
 
 /* header */
 header {
-  background-color: #ffead8;
-  min-height: 10vh;
-  border-bottom: 1px solid #F27405;
+    background-color: var(--color-bg-primary);
+    min-height: 10vh;
+    border-bottom: 1px solid var(--color-text-secondary);
 
-  .custom-header-logo-img {
-    width: 85px;
-    height: 85px;
-  }
+    .custom-header-logo-img {
+        width: 85px;
+        height: 85px;
+    }
 }
 
 /* header > accordion */
 .custom-accordion-item {
-  background-color: #ffead8;
+    background-color: var(--color-bg-primary);
 }
 
 .custom-accordion-btn {
-  background: none;
-  border: none;
+    background: none;
+    border: none;
 }
 
 .custom-accordion-btn-img {
-  width: 25px;
-  height: 25px;
-  background: none;
+    width: 25px;
+    height: 25px;
+    background: none;
 
-  &:focus {
-    border: none;
-    outline: none;
-    box-shadow: none;
-  }
+    &:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
 }
 
 /* header > nav */
 .custom-nav-link {
-  color: #F27405;
+    color: var(--color-text-secondary);
 
-  &:hover {
-    color: #65A653;
-  }
+    &:hover {
+        color: var(--color-text-hover);
+    }
 }
 
 /* main container */
 .custom-main-container {
-  position: relative;
-  min-height: 60vh;
+    position: relative;
+    min-height: 60vh;
 }
 
 /* footer */
 .custom-footer {
-  background-color: #ffead8;
-  border-top: 1px solid #ffead8;
-  border-radius: 15px 15px 0 0;
-  min-height: 30vh;
-
+    background-color: var(--color-bg-primary);
+    border-top: 1px solid var(--color-bg-primary);
+    border-radius: 15px 15px 0 0;
+    min-height: 30vh;
 }
-
 .custom-footer-container {
-  a {
-    color: #F27405;
-
-    &:hover {
-      color: #65A653;
+    h5 {
+        color: var(--color-text-primary);
     }
-  }
+
+    a {
+        color: var(--color-text-secondary);
+
+        &:hover {
+            color: var(--color-text-hover);
+        }
+    }
 }
 
 .custom-footer-logo-img {
-  width: 80px;
-  height: 80px;
+    width: 80px;
+    height: 80px;
 }
