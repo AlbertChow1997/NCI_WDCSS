@@ -7,7 +7,7 @@
     height: 500px;
     width: 100%;
 
-    color: white;
+    color: var(--color-white);
     position: relative;
 }
 
@@ -20,24 +20,24 @@
 
 .contact-card {
     margin-bottom: 20px;
-    color: black;
+    color: var(--color-text-primary);
     font-family: "Roboto", sans-serif;
 }
 
 .contact-card-head {
     margin-bottom: 20px;
-    color: black;
+    color: var(--color-text-primary);
     font-family: "Roboto", sans-serif;
 }
 
 .contact-info {
     margin-bottom: 20px;
-    color: black;
+    color: var(--color-text-primary);
     font-family: "Roboto", sans-serif;
 }
 
 .custom-container-fluid {
-    background-color: #faf2e8;
+    background-color: var(--color-bg-primary);
 }
 
 .map-iframe {
