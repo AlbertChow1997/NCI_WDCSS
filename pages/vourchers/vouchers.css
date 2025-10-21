@@ -4,6 +4,15 @@
     color: #F27405;
 }
 
+#vouchers-first-row {
+    margin-bottom: 28px;
+}
+#vouchers-second-row {
+    margin-bottom: 28px;
+}
+
+
+
 .card-title {
     font-size: 35px;
     font-weight: bold;
@@ -14,3 +23,9 @@
     font-size: 15px;
     color: #e8ba14;
 }
+
+.btn-primary {
+    background-color: #F27405;
+    border-color: #F27405;
+}
+
