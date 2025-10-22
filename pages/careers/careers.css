@@ -19,3 +19,8 @@ body {
 .custom-row {
     color: var(--color-white);
 }
+
+.btn {
+    background-color: #a63c24;
+
+}

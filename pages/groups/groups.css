@@ -1,0 +1,45 @@
+.container {
+  margin-bottom: 50px;
+}
+
+.row {
+  margin-bottom: 50px;
+}
+
+.row-col-1 {
+  margin-bottom: 50px;
+}
+
+.content-title {
+  font-size: 65px;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #F2D8A7;
+}
+
+.content-text {
+  font-size: 35px;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #F2D8A7;
+}
+
+.mb-3{
+  margin-bottom: 20px;
+  color: #00000091;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #732514;
+  border-color: #732514;
+  margin-top: 30px;
+}
+
+.card{
+  padding: 10px;
+  background-color: antiquewhite;
+}

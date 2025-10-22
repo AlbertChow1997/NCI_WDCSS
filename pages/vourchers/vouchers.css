@@ -1,7 +1,7 @@
 #vouchers-title {
     font-size: 65px;
     font-weight: bold;
-    color: #F27405;
+    color: #a63c24;
 }
 
 #vouchers-first-row {
@@ -16,7 +16,7 @@
 .card-title {
     font-size: 35px;
     font-weight: bold;
-    color: #F27405;
+    color: #a63c24;
 }
 
 .card-text {
@@ -25,7 +25,7 @@
 }
 
 .btn-primary {
-    background-color: #F27405;
-    border-color: #F27405;
+    background-color: #a63c24;
+    border-color: #a63c24;
 }
 

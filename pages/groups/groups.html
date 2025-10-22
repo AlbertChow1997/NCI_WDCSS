@@ -171,10 +171,62 @@ groups.html
 		<!-- *****CLOSING HEADER***** -->
 
 		<!-- ******MAIN CONTENT***** -->
-		<div class="container my-4 custom-main-container">
+		<div class="container-fluid">
 			<!-- YOUR CODE GOES HERE WITHIN THIS CONTAINER -->
-			<p>Groups</p>
+			<div class="row">
+  			<img src="../../assets/images/groups/groupsbackground.png" class="card-img" alt="groups background">
+  		</div>
+			<div class="row-cols-1">
+    			<h5 class="content-title">Groups Reservation</h5>
+    			<p class="content-text">We provide a group reservation service for our guests to enjoy a special experience with their friends and family.</p>
+					<p class="content-text">We offer group reservations for events such as birthdays, weddings, and company gatherings.</p>
+					<p class="content-text">Contact us for more information on our group reservation service or make a reservation by the form below.</p>
+    			<p class="content-text" id="groups-details"><small>Our number: +353 123 456 789</small></p>
+  		</div>
+			<div class="card"> 
+				<form>
+					<div class="mb-3">
+    				<p>This form is just for group reservation (more than 10 people). Please fill in the details below.</p>
+  				</div>
+  				<div class="mb-3">
+    				<label for="exampleInputEmail1" class="form-label">Email address</label>
+    				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    				
+  				</div>
+  				<div class="mb-3">
+    				<label for="exampleInputPassword1" class="form-label">Phone Number</label>
+    				<input type="tel" class="form-control" id="exampleInputPassword1">
+  				</div>
+					<div class="mb-3">
+						<label for="exampleFormControlTextarea1" class="form-label">Group Size</label>
+						<select class="form-select" aria-label="Default select example">
+  					<option selected>Choose your group size</option>
+  					<option value="1">10-15</option>
+  					<option value="2">16-20</option>
+  					<option value="3">21-25</option>
+						<option value="4">26-30</option>
+						<option value="5">31-40</option>
+						<option value="6">over 40, please input in the message block.</option>
+						</select>
+					</div>
+					<div class="mb-3">
+  					<label for="exampleFormControlTextarea1" class="form-label">Message</label>
+  					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+					<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+					
+  				<button id="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+			<script>
+				const submit = document.getElementById("submit");
+
+				submit.addEventListener("click", function () {
+					alert("Thank you for your reservation! We will contact you soon.");
+				});
+			</script>
 		</div>
+		
 		<!-- ******CLOSING CONTENT***** -->
 
 		<!-- *****FOOTER***** -->
