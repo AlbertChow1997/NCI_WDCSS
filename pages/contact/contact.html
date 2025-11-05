@@ -1,7 +1,7 @@
 <!-- 
 @Author: Manasses Souza, Albert Chow, Yanxi Zhou
-Date: 08/10/25
-Version: 1.0 
+Date: 27/10/25
+Version: 2.0 
 contact.html
 -->
 <!DOCTYPE html>
@@ -131,17 +131,63 @@ contact.html
         <!-- *****CLOSING HEADER***** -->
 
         <!-- ******MAIN CONTENT***** -->
+
+        <!-- ******hero-banner***** -->
         <div class="hero-banner">
             <div class="hero-banner-text">Contact us</div>
         </div>
 
-        <div class="container-fluid custom-container-fluid p-5" id="contact-section"></div>
+     
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("contact-section").innerHTML = Contact.createContactSection();
-            });
-        </script>
+       <div class="ontact-card mt-4">
+            <div class="row">
+                <!-- ******get in touch***** -->
+                <div class="col-6">
+                
+                        <div class="contact-card-head mt-4">
+                            <h1>Get in Touch</h1>
+                        </div>  
+                        
+                        <div class="contact-card-head mt-4">
+                            <h3>Address</h3> 
+                        </div> 
+
+
+                        <div class="contact-info">
+                            <h5>Mayor Street Lower,</h5>
+                            <h5>International Financial Services Centre,</h5>
+                            <h5>Dublin 1</h5>
+                        </div>
+
+                        <div class="contact-card-head">
+                            <h3>Tel</h3>
+                        </div> 
+
+                        <div class="contact-info">
+                            <h5>+353 894542481</h5>
+                        </div>
+                
+                        <div class="contact-card-head">
+                            <h3>Email</h3>
+                        </div> 
+
+                        <div class="contact-info">
+                            <h5>MayorSquareGuinness@outlook.com</h5>
+                        </div>
+                   
+                </div>
+                <!-- ******google map***** -->
+                 <div class="col-6">
+                    <div id="createContactMap" class="contact-map">
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function(){
+                                document.getElementById("createContactMap").innerHTML = Contact.createContactMap();
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+       </div>
 
         <!-- ******CLOSING CONTENT***** -->
 

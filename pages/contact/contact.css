@@ -20,21 +20,41 @@
 
 .contact-card {
     margin-bottom: 20px;
-    color: var(--color-text-primary);
+    color: white;
     font-family: "Roboto", sans-serif;
 }
 
 .contact-card-head {
-    margin-bottom: 20px;
-    color: var(--color-text-primary);
+    margin-bottom: 8px;
+    color: white;
     font-family: "Roboto", sans-serif;
+    padding: 10px 300px;
 }
 
-.contact-info {
-    margin-bottom: 20px;
-    color: var(--color-text-primary);
-    font-family: "Roboto", sans-serif;
+.contact-card-head:hover {
+    background-color: rgba(255,255,255,0.1);
+    transform: translateX(10px);
 }
+
+
+.contact-info {
+    margin-bottom: 8px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    padding: 10px 300px;
+}
+
+.contact-info:hover {
+    background-color: rgba(255,255,255,0.1);
+    transform: translateX(10px);
+}
+
+.contact-map{
+    width:80%;
+    height:300px;
+    border-radius: 16px;
+}
+
 
 .custom-container-fluid {
     background-color: var(--color-bg-primary);
