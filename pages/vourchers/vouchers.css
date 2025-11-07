@@ -1,7 +1,6 @@
 #vouchers-title {
-    font-size: 65px;
-    font-weight: bold;
-    color: #a63c24;
+    font-size: 95px;
+    color: #ffffff;
 }
 
 #vouchers-first-row {
@@ -11,17 +10,19 @@
     margin-bottom: 28px;
 }
 
+.card-body{
+    background-color: antiquewhite;
+}
 
 
 .card-title {
     font-size: 35px;
-    font-weight: bold;
     color: #a63c24;
 }
 
 .card-text {
     font-size: 15px;
-    color: #e8ba14;
+    color: #a63c24;
 }
 
 .btn-primary {

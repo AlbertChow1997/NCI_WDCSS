@@ -11,26 +11,32 @@
 }
 
 .content-title {
-  font-size: 65px;
-  text-align: left;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 55px;
+  text-align: center;
   color: #F2D8A7;
 }
 
 .content-text {
   font-size: 35px;
   text-align: left;
-  font-weight: bold;
-  margin-bottom: 20px;
   color: #F2D8A7;
 }
+#group-main-container{
+  width: 80%;
+}
 
+#group-reservation-bg-head{
+  margin-top: 20px;
+
+}
+#group-reservation-form-card{
+  margin-top: 20px;
+  padding: 3%; 
+}
 #group-reservation-form {
   margin-bottom: 20px;
   color: #00000091;
   font-size: 35px;
-  font-weight: bold;
 }
 
 .btn-primary {
