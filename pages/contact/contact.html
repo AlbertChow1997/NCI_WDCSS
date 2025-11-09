@@ -133,61 +133,55 @@ contact.html
         <!-- ******MAIN CONTENT***** -->
 
         <!-- ******hero-banner***** -->
-        <div class="hero-banner">
+        <div class="hero-banner mb-5">
             <div class="hero-banner-text">Contact us</div>
         </div>
 
-     
-
-       <div class="ontact-card m-5 py-5">
-            <div class="row">
+        <div class="container p-3">
+            <div class="d-flex flex-column flex-md-row gap-5 align-items-center justify-content-md-evenly">
                 <!-- ******get in touch***** -->
-                <div class="col-6">
-                
-                        <div class="contact-card-head mt-4">
-                            <h1>Get in Touch</h1>
-                        </div>  
-                        
-                        <div class="contact-card-head mt-4">
-                            <h3>Address</h3> 
-                        </div> 
+                <div>
+                    <div class="custom-col mb-5">
+                        <h1>Get in Touch</h1>
+                    </div>
 
+                    <div class="custom-col mb-5">
+                        <h3>Address</h3>
+                    </div>
 
-                        <div class="contact-info">
-                            <h5>Mayor Street Lower,</h5>
-                            <h5>International Financial Services Centre,</h5>
-                            <h5>Dublin 1</h5>
-                        </div>
+                    <div class="custom-col mb-5">
+                        <h5>Mayor Street Lower,</h5>
+                        <h5>International Financial Services Centre,</h5>
+                        <h5>Dublin 1</h5>
+                    </div>
 
-                        <div class="contact-card-head">
-                            <h3>Tel</h3>
-                        </div> 
+                    <div class="custom-col mb-5">
+                        <h3>Tel</h3>
+                    </div>
 
-                        <div class="contact-info">
-                            <h5>+353 894542481</h5>
-                        </div>
-                
-                        <div class="contact-card-head">
-                            <h3>Email</h3>
-                        </div> 
+                    <div class="custom-col mb-5">
+                        <h5>+353 894542481</h5>
+                    </div>
 
-                        <div class="contact-info">
-                            <h5>MayorSquareGuinness@outlook.com</h5>
-                        </div>
-                   
-                </div>
-                <!-- ******google map***** -->
-                 <div class="col-6">
-                    <div id="createContactMap" class="contact-map pt-5">
-                        <script>
-                            document.addEventListener('DOMContentLoaded', function(){
-                                document.getElementById("createContactMap").innerHTML = Contact.createContactMap();
-                            });
-                        </script>
+                    <div class="custom-col mb-5">
+                        <h3>Email</h3>
+                    </div>
+
+                    <div class="custom-col mb-5">
+                        <h5>MayorSquareGuinness@outlook.com</h5>
                     </div>
                 </div>
+                <!-- ******google map***** -->
+
+                <div id="createContactMap">
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                            document.getElementById("createContactMap").innerHTML = Contact.createContactMap();
+                        });
+                    </script>
+                </div>
             </div>
-       </div>
+        </div>
 
         <!-- ******CLOSING CONTENT***** -->
 
