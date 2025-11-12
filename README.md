@@ -32,12 +32,37 @@ The final project of Web Design and Client Side Scripting
 + PT Serif -- Big Title
 + Bodoni Moda -- Body
 
+### 2.Reconsider the backgroud picture
+
+### 3.The footer should be interactive when the user click the links inside
+ + Every link should link to an external website
+ + Remove some of the links
+ + Some links could add a function to scroll to the corresponding section
+
+
+
+
 
 ## About page name = "AboutPage"
 ## Home page
 ## Menu page
 ## Group page
+ + When the people is under 10, the form should tell them to use the reservation page
 ## Vouchers page
+ + Change the button hover colour
 ## Career page
+ + Modify the picture on the top
+ + Change the button hover colour
+ + Add a alert form after click the button
+ + The form should include the following fields:
+ ++ Name
+ ++ Email
+ ++ Phone
+ ++ CV
+ ++ Introduce yourself
+ + 
 ## Contact page
 ## Reservation page
+ + Add a new window when submit successfully
+ + The window should include the following texts: "Thank you for your reservation, we will contact you soon"
+
