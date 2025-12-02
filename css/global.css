@@ -93,3 +93,592 @@ header {
     width: 80px;
     height: 80px;
 }
+
+/*Content below is the css for the other pages*/
+/* ===========================================================================
+   HOMEPAGE STYLES
+   =========================================================================== */
+body {
+    background-color: var(--color-bg-secondary);
+}
+
+/* banner */
+.custom-img-banner {
+    background-image: url("../assets/images/homepage/page-top__background.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    min-height: 60vh;
+
+    /* apply blur filter to img with before pseudo */
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(5px);
+        z-index: 1;
+    }
+}
+
+.custom-btn {
+    background-color: var(--color-btn);
+
+    a {
+        color: var(--color-white);
+    }
+
+    &:hover {
+        background-color: var(--color-text-secondary);
+
+        a {
+            color: var(--color-white);
+        }
+    }
+}
+
+/* main content  */
+.custom-card-container {
+    margin: 50px 0;
+}
+
+.custom-bg-img-card {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.custom-bg-img-1 {
+    background-image: url("../assets/images/homepage/card-container__bg-image1.jpg");
+}
+
+.custom-bg-img-2 {
+    background-image: url("../assets/images/homepage/card-container__bg-image2.jpg");
+}
+
+/* section cards */
+.custom-card-abt {
+    border: none;
+    border-left: 8px solid var(--color-text-secondary);
+
+    width: 100%;
+    min-height: 50vh;
+
+    h2,
+    h5,
+    h6 {
+        color: var(--color-text-secondary);
+        margin-top: 10px;
+    }
+}
+
+.cca-right {
+    margin-right: -35px;
+}
+
+.cca-left {
+    margin-left: -35px;
+}
+
+.custom-card-img {
+    height: 600px;
+    aspect-ratio: 3 / 5.5;
+    object-fit: cover;
+    border-radius: 5px;
+
+    filter: contrast(1.25);
+
+    box-shadow: 0px 1px 19px 5px rgba(116, 116, 116, 0.45);
+    z-index: 1;
+}
+
+@media (min-width: 992px) {
+    /* cards */
+    .cca-left {
+        h2,
+        p,
+        button {
+            position: absolute;
+            right: 5%;
+        }
+
+        p {
+            top: 15%;
+        }
+
+        button {
+            bottom: 5%;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    /* banner */
+    .custom-img-banner {
+        height: 50vh;
+    }
+
+    /* cards */
+    .custom-card-img {
+        width: 75% !important;
+        height: auto;
+    }
+
+    .cca-bottom {
+        z-index: 2;
+        margin-bottom: -35px;
+    }
+
+    .cca-top {
+        z-index: 2;
+        margin-top: -35px;
+    }
+
+    .cca-left {
+        p {
+            right: 0;
+        }
+    }
+}
+
+/* ===========================================================================
+   RESERVATION PAGE STYLES
+   =========================================================================== */
+.book-a-table{
+    font-size: 95px;
+    color: white;
+    text-align: center;
+}
+#book-a-table-container{
+    align-items: center;
+    text-align: center;
+}
+
+.introduce{
+    color: white;
+    width: 77.6%;
+    text-align: center;
+    font-size: 20px;
+    margin:0 auto;
+    border-radius: 10px;
+}
+
+.reservation{
+    font-size: 95px;
+    color:white ;
+    text-align: center;
+}
+
+.reservation-form {
+    width: 1000px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.reservation-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #a63c24;
+    outline: none;
+}
+
+.error {
+    color: #d93025;
+    font-size: 13px;
+    margin-top: 4px;
+    height: 15px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #732514;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #a63c24;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* ===========================================================================
+   MENUS PAGE STYLES
+   =========================================================================== */
+/* page top banner */
+.custom-banner {
+    min-height: 415px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-top: 160px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: block;
+        background: rgba(0, 0, 0, 0.45);
+    }
+}
+
+.custom-banner-title {
+    color: var(--color-white);
+}
+
+/* food navbar */
+.custom-food > div {
+    z-index: 5;
+}
+
+/* food menu */
+.custom-food__menu {
+    background-color: var(--color-text-primary);
+    height: 40px;
+
+    a {
+        color: var(--color-white);
+        font-size: 1.5vh;
+    }
+
+    a:hover {
+        color: var(--color-text-hover);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .custom-food__menu {
+        a {
+            font-size: 2.5vh;
+        }
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .custom-banner__background {
+        object-fit: cover;
+        z-index: -1;
+
+        opacity: 0;
+
+        transform: scale(0.95);
+        transition: all 0.8s ease;
+
+        animation: fadeInScale 2s ease forwards;
+    }
+
+    /* food */
+    .custom-food__item {
+        opacity: 0.7;
+        transform: translateY(100px);
+
+        animation: slideUp linear forwards;
+        animation-timeline: view();
+        animation-range: entry;
+    }
+
+    .custom-food__title {
+        color: var(--color-white);
+
+        transform: translateX(-15%);
+        opacity: 0.6;
+
+        animation: slideInRight 1s linear forwards;
+    }
+
+    .custom-food__title-view {
+        color: var(--color-white);
+
+        transform: translateX(-15%);
+        opacity: 0.6;
+
+        animation: slideInRight forwards;
+        animation-timeline: view();
+        animation-range: entry 0% cover 50%;
+    }
+
+    .custom-food__figure {
+        margin: 0;
+
+        width: 100%;
+        height: 250px;
+
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            max-height: 250px;
+
+            object-fit: cover;
+            transition: transform 0.5s ease;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .custom-food__wrap {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 6px 12px;
+
+        background-color: rgba(0, 0, 0, 0.54);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+        color: var(--color-white);
+
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        align-items: center;
+    }
+
+    .custom-food__content {
+        background-color: var(--color-text-primary);
+        color: var(--color-white);
+
+        height: 100px;
+        padding: 12px 24px;
+    }
+
+    /*  element animation when it first appears */
+    @keyframes fadeInScale {
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    @keyframes slideInRight {
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideUp {
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+/* ===========================================================================
+   CAREERS PAGE STYLES
+   =========================================================================== */
+.card-body {
+    background-color: antiquewhite;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 60px;
+}
+
+.job-opening-title {
+    font-size: 55px;
+}
+
+.custom-container {
+    color: var(--color-text-primary);
+}
+
+.custom-row {
+    color: var(--color-white);
+}
+
+.btn {
+    background-color: #a63c24;
+}
+
+/* ===========================================================================
+   CONTACT PAGE STYLES
+   =========================================================================== */
+.hero-banner {
+    background-image: url("../../assets/images/contact/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 500px;
+    width: 100%;
+
+    color: var(--color-white);
+    position: relative;
+}
+
+.hero-banner-text {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 100px;
+}
+
+iframe {
+    min-height: 500px;
+}
+
+.custom-col {
+    color: var(--color-white);
+}
+
+.contact-card-head {
+    margin-bottom: 8px;
+    color: white;
+
+    padding: 10px 300px;
+}
+
+.contact-card-head:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(10px);
+}
+
+.contact-info {
+    margin-bottom: 8px;
+    color: white;
+    padding: 10px 300px;
+}
+
+.contact-info:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(10px);
+}
+
+/* ===========================================================================
+   GROUPS PAGE STYLES
+   =========================================================================== */
+.container {
+    margin-bottom: 50px;
+}
+
+.row {
+    margin-bottom: 50px;
+}
+
+.row-col-1 {
+    margin-bottom: 50px;
+}
+
+.content-title {
+    font-size: 55px;
+    text-align: center;
+    color: #F2D8A7;
+}
+
+.content-text {
+    font-size: 35px;
+    text-align: left;
+    color: #F2D8A7;
+}
+
+#group-main-container {
+    width: 65%;
+}
+
+#group-reservation-bg-head {
+    margin-top: 20px;
+}
+
+#group-reservation-form-card {
+    margin-top: 20px;
+    padding: 3%; 
+}
+
+#group-reservation-form {
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 18px;
+}
+
+.btn-primary {
+    background-color: #732514;
+    border-color: #732514;
+    margin-top: 30px;
+}
+
+.card {
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+/* ===========================================================================
+   VOUCHERS PAGE STYLES
+   =========================================================================== */
+#vouchers-title {
+    font-size: 95px;
+    color: #ffffff;
+}
+
+#vouchers-first-row {
+    margin-bottom: 28px;
+}
+
+#vouchers-second-row {
+    margin-bottom: 28px;
+}
+
+.vouchers .card-body {
+    background-color: antiquewhite;
+}
+
+.card-title {
+    font-size: 35px;
+    color: #a63c24;
+}
+
+.card-text {
+    font-size: 15px;
+    color: #a63c24;
+}
+
+.vouchers .btn-primary {
+    background-color: #a63c24;
+    border-color: #a63c24;
+}
