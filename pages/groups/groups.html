@@ -191,37 +191,45 @@ groups.html
 					<div id="group-reservation-form" class="mb-3">
     				<p>This form is just for group reservation (more than 10 people). Please fill in the details below.</p>
   				</div>
-  				<div id="group-reservation-form" class="mb-3">
-    				<label for="exampleInputEmail1" class="form-label">Email address</label>
-    				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    				
-  				</div>
-  				<div id="group-reservation-form" class="mb-3">
-    				<label for="exampleInputPassword1" class="form-label">Phone Number</label>
-    				<input type="tel" class="form-control" id="exampleInputPassword1">
-  				</div>
-					<div id="group-reservation-form" class="mb-3">
-						<label for="exampleFormControlTextarea1" class="form-label">Group Size</label>
-						<select class="form-select" aria-label="Default select example">
-  					<option selected>Choose your group size, if under 10 people, please use the reservation page on the head.</option>
-  					<option value="1">10-15</option>
-  					<option value="2">16-20</option>
-  					<option value="3">21-25</option>
-						<option value="4">26-30</option>
-						<option value="5">31-40</option>
-						<option value="6">over 40, please input in the message block.</option>
-						</select>
-					</div>
+					<!-- 修改邮箱输入框 -->
+<div id="group-reservation-form" class="mb-3">
+    <label for="email" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+    <div id="emailError" class="error text-danger"></div>
+</div>
+
+<!-- 修改电话输入框 -->
+<div id="group-reservation-form" class="mb-3">
+    <label for="phone" class="form-label">Phone Number</label>
+    <input type="tel" class="form-control" id="phone">
+    <div id="phoneError" class="error text-danger"></div>
+</div>
+
+<!-- 组人数选择框已经正确，只需添加错误提示 -->
+<div id="group-reservation-form" class="mb-3">
+    <label for="groupSize" class="form-label">Group Size</label>
+    <select class="form-select" id="groupSize" name="groupSize" aria-label="Default select example">
+        <option value="">Choose your group size, if under 10 people, please use the reservation page on the head.</option>
+        <option value="1">10-15</option>
+        <option value="2">16-20</option>
+        <option value="3">21-25</option>
+        <option value="4">26-30</option>
+        <option value="5">31-40</option>
+        <option value="6">over 40, please input in the message block.</option>
+    </select>
+    <div id="groupSizeError" class="error text-danger"></div>
+</div>
+  				
 					<div id="group-reservation-form" class="mb-3">
   					<label for="exampleFormControlTextarea1" class="form-label">Message</label>
   					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 					</div>
 					<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
 					
-  				<button id="submit" class="btn btn-primary">Submit</button>
+  				<button id="submitBtn" class="btn btn-primary">Submit</button>
 				</form>
 			</div>
-			<script src="../../JS/groups/groups.js"></script>
+			<script src="./groups.js"></script>
 			</script>
 		</div>
 		
