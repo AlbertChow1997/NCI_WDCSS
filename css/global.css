@@ -1,4 +1,7 @@
 /* CUSTOM CSS FOR HEADER, FOOTER AND OTHER SHARED COMPONENTS */
+/* ===========================================================================
+   GLOBAL STYLES @Author: Manasses Souza
+   =========================================================================== */
 :root {
     --color-white: #ffffff;
     --color-text-primary: #222222;
@@ -96,7 +99,7 @@ header {
 
 /*Content below is the css for the other pages*/
 /* ===========================================================================
-   HOMEPAGE STYLES
+   HOMEPAGE STYLES @Author: Manasses Souza
    =========================================================================== */
 body {
     background-color: var(--color-bg-secondary);
@@ -244,7 +247,7 @@ body {
 }
 
 /* ===========================================================================
-   RESERVATION PAGE STYLES
+   RESERVATION PAGE STYLES @Author: Yanxi Zhou
    =========================================================================== */
 .book-a-table{
     font-size: 95px;
@@ -342,7 +345,7 @@ button:active {
 }
 
 /* ===========================================================================
-   MENUS PAGE STYLES
+   MENUS PAGE STYLES @Author: Manasses Souza
    =========================================================================== */
 /* page top banner */
 .custom-banner {
@@ -510,7 +513,7 @@ button:active {
 }
 
 /* ===========================================================================
-   CAREERS PAGE STYLES
+   CAREERS PAGE STYLES @Author: Jiawei Zhou
    =========================================================================== */
 .card-body {
     background-color: antiquewhite;
@@ -538,7 +541,7 @@ button:active {
 }
 
 /* ===========================================================================
-   CONTACT PAGE STYLES
+   CONTACT PAGE STYLES @Author: Yanxi Zhou
    =========================================================================== */
 .hero-banner {
     background-image: url("../../assets/images/contact/background.png");
@@ -592,7 +595,7 @@ iframe {
 }
 
 /* ===========================================================================
-   GROUPS PAGE STYLES
+   GROUPS PAGE STYLES @Author: Jiawei Zhou
    =========================================================================== */
 .container {
     margin-bottom: 50px;
@@ -649,7 +652,7 @@ iframe {
 }
 
 /* ===========================================================================
-   VOUCHERS PAGE STYLES
+   VOUCHERS PAGE STYLES @Author: Jiawei Zhou
    =========================================================================== */
 #vouchers-title {
     font-size: 95px;
